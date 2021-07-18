@@ -1,0 +1,258 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  line-height: 36px;
+}
+body .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+body .container h1 {
+  font-size: 80px;
+  line-height: 106px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border-bottom: #000000 solid 2px;
+  margin-top: 37px;
+}
+body .container .profile {
+  margin-top: 46px;
+  margin-bottom: 46px;
+}
+body .container .info {
+  margin-bottom: 72px;
+}
+body .container .info .title {
+  border-bottom: #000000 solid 1px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+body .container .info span {
+  display: inline;
+}
+body .container .info .ch {
+  font-size: 32px;
+  line-height: 43px;
+  padding-left: 1px;
+  text-align: left;
+}
+body .container .info .eg {
+  margin-left: 16px;
+  line-height: 32px;
+  color: #A00404;
+}
+body .container .info .list {
+  margin-bottom: 24px;
+}
+body .container .edu {
+  margin-bottom: 72px;
+}
+body .container .edu .title {
+  border-bottom: #000000 solid 1px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+body .container .edu span {
+  display: inline;
+}
+body .container .edu .ch {
+  font-size: 32px;
+  line-height: 43px;
+  padding-left: 1px;
+  text-align: left;
+}
+body .container .edu .eg {
+  margin-left: 16px;
+  line-height: 32px;
+  color: #A00404;
+}
+body .container .edu li {
+  margin-bottom: 24px;
+}
+body .container .exp ul {
+  margin-left: 24px;
+  border-left: 1px solid #96A9C4;
+}
+body .container .exp .title {
+  border-bottom: #000000 solid 1px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+}
+body .container .exp span {
+  display: inline;
+}
+body .container .exp .ch {
+  font-size: 32px;
+  line-height: 43px;
+  padding-left: 1px;
+  text-align: left;
+}
+body .container .exp .eg {
+  margin-left: 16px;
+  line-height: 32px;
+  color: #A00404;
+}
+body .container .exp li {
+  padding-left: 24px;
+  margin-bottom: 24px;
+}
+body .container .exp .bottom {
+  margin-bottom: 72px;
+}
+body .container .exp .intro {
+  width: 642px;
+  font-size: 20px;
+  line-height: 30px;
+}
+body .container .exp .logo {
+  margin-bottom: 8px;
+}
+body .container .exp .logo a:hover img {
+  display: block;
+  width: 100px;
+}
+body .bc-blue {
+  background-color: #415165;
+  padding-top: 24px;
+}
+body .bc-blue .skill {
+  width: 996px;
+  padding-bottom: 36px;
+  margin-bottom: 72px;
+}
+body .bc-blue .skill .title {
+  border-bottom: #FFFFFF solid 1px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+body .bc-blue .skill ul {
+  margin: 0 auto;
+  max-width: 250px;
+  border-left: 1px solid #96A9C4;
+}
+body .bc-blue .skill span {
+  display: inline;
+}
+body .bc-blue .skill .ch {
+  font-size: 32px;
+  line-height: 43px;
+  color: #FFFFFF;
+  text-align: center;
+}
+body .bc-blue .skill .eg {
+  margin-left: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .bc-blue .skill li {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+  font-family: Roboto, Light;
+}
+body .bc-blue .footer {
+  text-align: center;
+}
+body .bc-blue .footer .title {
+  border-bottom: #FFFFFF solid 1px;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+body .bc-blue .footer span {
+  display: inline;
+}
+body .bc-blue .footer .ch {
+  font-size: 32px;
+  line-height: 43px;
+  color: #FFFFFF;
+  text-align: center;
+}
+body .bc-blue .footer .eg {
+  margin-left: 16px;
+  line-height: 32px;
+  color: #FFFFFF;
+}
+body .bc-blue .footer li {
+  color: white;
+}
+body .bc-blue .footer li a {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+  font-family: Roboto, Light;
+}
+body .bc-blue .footer .social {
+  margin-top: 16px;
+  padding-bottom: 26px;
+  padding-left: 24px;
+}
+body .bc-blue .footer .social li {
+  display: inline;
+}
+body .bc-blue .footer a:hover {
+  text-shadow: 4px 3px 4px #f5e23b;
+}
+body .bc-blue .footer a:hover img {
+  width: 70px;
+}/*# sourceMappingURL=all.css.map */

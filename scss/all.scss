@@ -1,0 +1,244 @@
+@import "reset";
+
+
+// global var
+$line-color-b: #000000 solid 1px;
+$line-color-w: #FFFFFF solid 1px;
+$base-size: 8px;
+
+//mixin
+//白色背景
+//線
+@mixin content-w{
+    border-bottom: $line-color-b;
+    margin-bottom: $base-size*2;
+    padding-bottom: $base-size; //border跟字的距離
+}
+
+@mixin content-w-title-ch{
+    font-size: $base-size*4;
+    line-height: 43px;
+    padding-left: 1px;
+    text-align: left;
+}
+
+@mixin content-w-title-eg{
+    margin-left: $base-size*2;
+    line-height: $base-size*4;
+    color: #A00404;
+}
+
+@mixin content-w-words{
+    margin-bottom: $base-size*3;
+}
+
+//藍色背景
+//線
+@mixin content-bl{
+    border-bottom: $line-color-w;
+    margin-bottom: $base-size*2;
+    padding-bottom: $base-size;
+}
+
+
+@mixin content-bl-title-ch{
+    font-size: $base-size*4;
+    line-height: 43px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+@mixin content-bl-title-eg{
+    margin-left: $base-size*2;
+    line-height: $base-size*4;
+    color: #FFFFFF;
+}
+
+@mixin content-bl-words{
+    margin-bottom: $base-size*2;
+    color: #FFFFFF;
+    font-family: Roboto, Light;
+}
+
+//格式
+a{
+    text-decoration: none;
+    
+}
+
+body{
+    font-size: $base-size*3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 36px;
+
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+        
+        h1{
+            font-size: $base-size*10;
+            line-height: 106px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            border-bottom: #000000 solid 2px;
+            margin-top: 37px;
+        }
+
+        .profile{
+            margin-top: 46px; //48-2
+            margin-bottom: 46px; //48-2
+        }
+
+        .info{
+            margin-bottom: $base-size*9;
+
+            .title{
+                @include content-w;
+            }
+            span{
+                display: inline;
+            }
+            .ch{
+                @include content-w-title-ch;
+            }
+            .eg{
+                @include content-w-title-eg;
+            }
+            .list{
+                margin-bottom: $base-size*3;                
+            }
+        }
+
+        .edu{
+            margin-bottom: $base-size*9;
+            .title{
+                @include content-w;
+            }
+            span{
+                display: inline;
+            }
+            .ch{
+                @include content-w-title-ch;
+            }
+            .eg{
+                @include content-w-title-eg;
+            }
+            li{
+                @include content-w-words;
+            }
+        }
+
+        .exp{
+            ul{
+                margin-left: $base-size*3;
+                border-left: 1px solid #96A9C4;
+            }
+            .title{
+                @include content-w;
+            }
+            span{
+                display: inline;
+            }
+            .ch{
+                @include content-w-title-ch;
+            }
+            .eg{
+                @include content-w-title-eg;
+            }
+            li{
+                padding-left: $base-size*3;
+                @include content-w-words;
+            }
+            .bottom{
+                margin-bottom: $base-size*9;
+            }
+            .intro{
+                width: 642px;
+                font-size: 20px;
+                line-height: 30px;
+            }
+            .logo{
+                margin-bottom: $base-size;
+                a:hover{
+                    img{
+                        display: block;
+                        width: 100px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .bc-blue{
+        background-color: #415165;
+        padding-top: $base-size*3;
+        .skill{
+            width: 996px;
+            padding-bottom: 36px;
+            margin-bottom: $base-size*9;
+            .title{
+                @include content-bl;
+                text-align: center;
+                margin-bottom: 36px;
+            }
+            ul{
+                margin: 0 auto;
+                max-width: 250px; //*若未來有較多字的技能，不是要重新設定嗎? 為何設定寬度就可以置中呢？
+                // margin-left: 392px; // 996/2-(24+188)/2
+                border-left: 1px solid #96A9C4;
+            }
+            span{
+                display: inline;
+            }
+            .ch{
+                @include content-bl-title-ch;
+            }
+            .eg{
+                @include content-bl-title-eg;
+            }
+            li{
+                margin-left: $base-size*3;
+                @include content-bl-words;
+            }
+        }
+        
+        .footer{
+            text-align: center;
+            .title{
+                @include content-bl;
+                text-align: center;
+                margin-bottom: $base-size*4;
+            }
+            span{
+                display: inline;
+            }
+            .ch{
+                @include content-bl-title-ch;
+            }
+            .eg{
+                @include content-bl-title-eg;
+            }
+            li {
+                color: white;
+                a{
+                margin-left: $base-size*3;
+                @include content-bl-words;
+                }
+            }
+
+            .social{
+                margin-top: $base-size*2;
+                padding-bottom: 26px; //36-8(a的margin-bottom)-2(img原本預留)
+                padding-left: $base-size*3;
+                li{
+                    display: inline;
+                }
+            }
+            a:hover{
+                text-shadow: 4px 3px 4px rgb(245, 226, 59);
+                img{
+                    width: 70px;
+                }
+            }
+        }
+    }
+}
