@@ -153,18 +153,21 @@ body .container .exp li {
   padding-left: 24px;
   margin-bottom: 24px;
 }
-body .container .exp .bottom {
+body .container .exp li p {
+  margin-bottom: 24px;
+}
+body .container .exp li .bottom {
   margin-bottom: 72px;
 }
-body .container .exp .intro {
+body .container .exp li .intro {
   width: 642px;
   font-size: 20px;
   line-height: 30px;
 }
-body .container .exp .logo {
+body .container .exp li .logo img {
   margin-bottom: 8px;
 }
-body .container .exp .logo a:hover img {
+body .container .exp li .logo img:hover {
   display: block;
   width: 100px;
 }
@@ -234,13 +237,12 @@ body .bc-blue .footer .eg {
   color: #FFFFFF;
 }
 body .bc-blue .footer li {
+  margin-bottom: 8px;
   color: white;
 }
 body .bc-blue .footer li a {
   margin-left: 24px;
-  margin-bottom: 16px;
-  color: #FFFFFF;
-  font-family: Roboto, Light;
+  color: white;
 }
 body .bc-blue .footer .social {
   margin-top: 16px;

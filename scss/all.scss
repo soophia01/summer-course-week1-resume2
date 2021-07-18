@@ -62,8 +62,7 @@ $base-size: 8px;
 
 //格式
 a{
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 body{
@@ -84,7 +83,7 @@ body{
         }
 
         .profile{
-            margin-top: 46px; //48-2
+            margin-top: 46px;
             margin-bottom: 46px; //48-2
         }
 
@@ -147,19 +146,20 @@ body{
             li{
                 padding-left: $base-size*3;
                 @include content-w-words;
-            }
-            .bottom{
-                margin-bottom: $base-size*9;
-            }
-            .intro{
-                width: 642px;
-                font-size: 20px;
-                line-height: 30px;
-            }
-            .logo{
-                margin-bottom: $base-size;
-                a:hover{
-                    img{
+                p{
+                    @include content-w-words;
+                }
+                .bottom{
+                    margin-bottom: $base-size*9;
+                }
+                .intro{
+                    width: 642px;
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+                .logo img{
+                    margin-bottom: $base-size;
+                    &:hover{
                         display: block;
                         width: 100px;
                     }
@@ -218,10 +218,11 @@ body{
                 @include content-bl-title-eg;
             }
             li {
+                margin-bottom: $base-size;
                 color: white;
                 a{
-                margin-left: $base-size*3;
-                @include content-bl-words;
+                    margin-left: $base-size*3;
+                    color: white;
                 }
             }
 
